@@ -1,0 +1,98 @@
+header {
+ height: 100vh;
+ background-color: #24345A;
+
+ @include xs-block() {
+  height: 120vh;
+
+ }
+
+ .header {
+
+  &__navbar {
+   @include wp();
+   display: flex;
+   justify-content: space-between;
+   padding-top: 2rem;
+
+
+   .logo {
+    img {
+     height: 35px;
+    }
+   }
+  }
+
+  &__nav {
+   div {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 6px;
+   }
+
+  }
+
+  &__items-middle {
+   @include wp();
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10rem;
+
+   @include md-block {
+    flex-direction: column;
+   }
+
+   img {
+    width: 800px;
+   }
+
+   .digita-partner {
+    @include md-block {
+     margin-bottom: 2rem;
+
+     .h1-text {
+      margin-top: -5rem;
+     }
+    }
+
+    color: #fff;
+
+    .h1-text {
+     margin-top: 6rem;
+     font-size: 45px;
+     margin-bottom: 1.5rem;
+
+     span {
+      font-weight: bold;
+     }
+    }
+
+    .h4-text {
+     font-size: 25px;
+     margin-bottom: 1.5rem;
+    }
+
+    .p {
+     font-size: 18px;
+    }
+   }
+
+   .vector {
+    @include size(12);
+    @include size-md(24);
+
+   }
+
+
+  }
+
+  &__vector {
+   @include size(14);
+   @include size-md(24);
+   margin-left: -5rem;
+  }
+
+
+ }
+}

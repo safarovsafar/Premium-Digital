@@ -1,0 +1,16 @@
+@import 'smart-grid';
+@import 'materialize.scss';
+@import './var/var';
+@import './button/button.scss';
+@import './effects/effects';
+@import './footer/footer';
+@import './header/header';
+@import './section/section';
+
+
+* {
+ @include reset();
+ font-family: 'Gilroy';
+ font-weight: normal;
+ font-style: normal;
+}
