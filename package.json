@@ -28,6 +28,7 @@
     "gulp-watch": "^5.0.1",
     "imagemin-pngquant": "^7.0.0",
     "jquery": "^3.4.0",
+    "lazyload": "^2.0.0-rc.2",
     "normalize.css": "^8.0.1",
     "parallax-js": "^3.1.0",
     "parallel": "^1.2.0",

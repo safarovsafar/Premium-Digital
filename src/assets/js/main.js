@@ -5,3 +5,15 @@ toggler.addEventListener('click', () => {
   toggler.classList.toggle('active');
   menu.classList.toggle('active');
 });
+
+const myLazyLoad = new LazyLoad({
+ elements_selector: ".lazyload"
+});
+
+// function smoothScroll(target, duration) {
+//  let target = document.querySelector(target);
+//  const targetPosition = target.getBoundingClientReact().top;
+//  const startPostiton =
+// }
+
+// smoothScroll('.section2', 1000)

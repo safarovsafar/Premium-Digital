@@ -7967,10 +7967,9 @@ header {
 }
 
 header .header__navbar {
-    max-width: 1460px;
-    margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+    height: 10vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7979,8 +7978,13 @@ header .header__navbar {
     justify-content: space-between;
 }
 
+header .header__navbar .logo img {
+    height: 35px;
+    margin-top: 1rem;
+}
+
 header .header__nav .menu__toggler {
-    position: absolute;
+    position: relative;
     top: 20px;
     left: 20px;
     z-index: 999;
@@ -8240,10 +8244,6 @@ section .wrapper__icons .items-icons .item {
 section .wrapper__icons .items-icons .item .head-text {
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
-
-section .wrapper__location {
-    border: 1px solid #000;
 }
 
 * {
