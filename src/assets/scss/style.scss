@@ -1,5 +1,4 @@
 @import 'smart-grid';
-@import 'materialize';
 @import './var/var';
 @import './button/button.scss';
 @import './effects/effects';
@@ -10,7 +9,7 @@
 
 * {
  @include reset();
- font-family: 'Gilroy';
+ font-family: 'Roboto';
  font-weight: normal;
  font-style: normal;
 }
