@@ -1,0 +1,41 @@
+footer {
+ height: 40vh;
+ background-color: #24345A;
+
+ .wrapper {
+  @include wp();
+  padding-top: 10rem;
+
+  .items {
+   display: flex;
+   justify-content: space-between;
+   color: azure;
+
+   @include md-block() {
+    flex-direction: column;
+   }
+
+   .item {
+    @include size(8);
+    text-align: center;
+
+    p,
+    a {
+     font-size: 20px;
+     color: aliceblue;
+    }
+
+
+
+    a:hover {
+     color: aquamarine;
+    }
+
+    img {
+     height: 40px;
+    }
+   }
+  }
+ }
+
+}

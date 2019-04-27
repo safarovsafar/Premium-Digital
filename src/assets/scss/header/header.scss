@@ -15,9 +15,19 @@ header {
    justify-content: space-between;
 
    .logo {
+    // display: flex;
+    text-align: center;
+
+
     img {
      height: 35px;
      margin-top: 1rem;
+     margin-bottom: 1rem;
+    }
+
+    p {
+     color: #fff;
+     font-size: 15px;
     }
    }
   }
@@ -123,10 +133,11 @@ header {
    @include wp();
    display: flex;
    justify-content: space-between;
-   margin-top: 10rem;
+   margin-top: 9rem;
 
    @include md-block {
     flex-direction: column;
+    margin-top: 13rem;
    }
 
    img {
@@ -178,7 +189,5 @@ header {
    @include size-md(24);
    margin-left: -5rem;
   }
-
-
  }
 }

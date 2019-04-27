@@ -1,5 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=K2D");
 
+footer {
+    height: 40vh;
+    background-color: #24345A;
+}
+
+footer .wrapper {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10rem;
+}
+
+footer .wrapper .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: azure;
+}
+
+footer .wrapper .items .item {
+    width: calc(33.33333% - 30px);
+    text-align: center;
+}
+
+footer .wrapper .items .item p,
+footer .wrapper .items .item a {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+footer .wrapper .items .item a:hover {
+    color: aquamarine;
+}
+
+footer .wrapper .items .item img {
+    height: 40px;
+}
+
 header {
     height: 100vh;
     background-color: #24345A;
@@ -17,9 +59,19 @@ header .header__navbar {
     justify-content: space-between;
 }
 
+header .header__navbar .logo {
+    text-align: center;
+}
+
 header .header__navbar .logo img {
     height: 35px;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header .header__navbar .logo p {
+    color: #fff;
+    font-size: 15px;
 }
 
 header .header__nav .menu__toggler {
@@ -138,7 +190,7 @@ header .header__items-middle {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-top: 10rem;
+    margin-top: 9rem;
 }
 
 header .header__items-middle img {
@@ -185,10 +237,6 @@ section .wrapper .head__text {
 }
 
 section .wrapper .items {
-    max-width: 1460px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -283,8 +331,8 @@ section .wrapper__icons .items-icons .item .head-text {
 }
 
 section .wrapper__location {
-    border: 1px solid #000;
-    margin-top: 5rem;
+    border: 0;
+    margin-top: 10rem;
 }
 
 * {
@@ -404,11 +452,19 @@ section .wrapper__location {
 }
 
 @media screen and (max-width: 960px) {
+    footer .wrapper .items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
     header .header__items-middle {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-top: 13rem;
     }
 
     header .header__items-middle .digita-partner {
@@ -473,17 +529,17 @@ section .wrapper__location {
 }
 
 @media screen and (max-width: 780px) {
+    footer .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     header .header__navbar {
         padding-left: 15px;
         padding-right: 15px;
     }
 
     header .header__items-middle {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    section .wrapper .items {
         padding-left: 15px;
         padding-right: 15px;
     }

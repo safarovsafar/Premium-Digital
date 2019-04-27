@@ -6,236 +6,203 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-
   <title>Premium digital</title>
 </head>
 
 <body>
-  <!---Header--->
   <header class="header">
     <div class="header__navbar">
       <div class="header__nav">
         <div class="menu">
-          <p class="section #1 #main"><a href="#">Главная</a></p>
-          <p class="section #2 #agency"><a href="#">Агентство</a></p>
-          <p class="section #3 "><a href="#">Наши услуги</a></p>
-          <p class="section #4"><a href="#">Портфолио</a></p>
-          <p class="section #5"><a href="#">Вакансии</a></p>
-          <p class="section #6"><a href="#">Контакты</a></p>
-
+          <p class="section #3"><a href="#services">Наши услуги</a></p>
+          <p class="section #2 #agency"><a href="#agency">Агентство</a></p>
+          <p class="section #6"><a href="#contacts">Контакты</a></p>
         </div>
-        <div class="menu__toggler">
-          <span></span>
-        </div>
-
+        <div class="menu__toggler"><span></span></div>
       </div>
       <div class="logo">
         <img class="lazyload logo" data-src="assets/img/logo.png">
+
+        <p> <a href="tel:+99895199-55-44">+99895199-55-44</a>
+          <br>
+          Заказать звонок.
+        </p>
+        <span></span>
       </div>
     </div>
-    <div class="header__items-middle">
+    <div class="header__items-middle" data-aos="fade-in">
       <div class="digita-partner">
-        <h1 class="h1-text">
-          НАДЕЖНЫЙ <span>DIGITAL-ПАРТНЕР
-            ДЛЯ ЛИДЕРОВ РЫНКА</span>
-        </h1>
-        <h4 class="h4-text">С нами любые задачи, вам по плечу!</h4>
-        <p class="p">Мы всегда готовы прийти на помощь, <br>
-          и решить для вас самые сложные задачи.</p>
+        <h1 class=" h1-text">НАДЕЖНЫЙ <span>DIGITAL-ПАРТНЕР ДЛЯ ЛИДЕРОВ РЫНКА</span></h1>
+        <h4 class="h4-text">С нами любые задачи,
+          вам по плечу !</h4>
+        <p class="p">Мы всегда готовы прийти на помощь,
+          <br>и решить для вас самые сложные задачи.</p>
       </div>
-      <div class="header__vector">
-        <img src="assets/img/social.png" alt="">
-      </div>
+      <div class="header__vector"><img src="assets/img/social.png" alt=""></div>
     </div>
-
   </header>
-  <!---Header--->
-
-  <!---Section--->
   <section>
     <div class="wrapper">
-      <div class="wrapper__marketing">
+      <div class="wrapper__marketing" id="services" data-aos="fade-in">
         <h1 class="head__text">Поисковый маркетинг</h1>
         <div class="items">
           <div class="item">
-            <h6 class="small-head">Поисковый маркетинг</h6>
-            <img class="lazyload" data-src="assets/img/1.png" alt="">
+            <h6 class="small-head">Поисковый маркетинг</h6><img class="lazyload" data-src="assets/img/1.png" alt="">
             <p class="p-text">Контекстная реклама в поисковых машинах Google Ads и Yandex Direct дает отличные
-              результаты, уже через 3 дня при небольших вложениях.</p>
-            <a href="">Подробнее</a>
+              результаты,
+              уже через 3 дня при небольших вложениях.</p>
+
           </div>
           <div class="item">
-            <h6 class="small-head">SEO продвижение</h6>
-            <img class="lazyload" data-src="assets/img/2.png" alt="">
-            <p class="p-text"><span class="bold">SEO</span> – это фундамент Вашего успеха в интернете: топовые позиции
-              во всех популярных
-              поисковых системах + доверие пользователей.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">SEO продвижение</h6><img class="lazyload" data-src="assets/img/2.png" alt="">
+            <p class="p-text"><span class="bold">SEO</span>– это фундамент Вашего успеха в интернете: топовые
+              позиции во всех популярных поисковых системах+доверие пользователей.</p>
+
           </div>
           <div class="item">
-            <h6 class="small-head">Google My Business</h6>
-            <img class="lazyload" data-src="assets/img/3.png" alt="">
-            <p class="p-text"><span class="bold">Google Maps</span> – это лидер среди современных картографических
-              сервисов, отметим Вашу компанию
-              и теперь Вас легко найдут</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Google My Business</h6><img class="lazyload" data-src="assets/img/3.png" alt="">
+            <p class="p-text"><span class="bold">Google Maps</span>– это лидер среди современных
+              картографических сервисов,
+              отметим Вашу компанию и теперь Вас легко найдут</p>
+
           </div>
         </div>
       </div>
-      <div class="wrapper__ads">
+      <div class="wrapper__ads" data-aos="fade-in">
         <h1 class="head__text">Медийная реклама (баннерная)</h1>
         <div class="items">
           <div class="item">
-            <h6 class="small-head">Медийная реклама Яндекс</h6>
-            <img class="lazyload" data-src="assets/img/4.png" alt="">
-
-            <p class="p-text">Медийная реклама в Яндексе – это размещение Вашего баннера на 35000 сайтах. Реклама
-              покажется людям заинтересованным в Вашем товаре.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Медийная реклама Яндекс</h6><img class="lazyload" data-src="assets/img/4.png" alt="">
+            <p class="p-text">Медийная реклама в Яндексе – это размещение Вашего баннера на 35000 сайтах.
+              Реклама покажется людям заинтересованным в Вашем товаре.</p>
           </div>
           <div class="item">
-            <h6 class="small-head">Медийная реклама Google</h6>
-            <img class="lazyload" data-src="assets/img/5.png" alt="">
-
-            <p class="p-text">Медийная реклама в Яндексе – это размещение Вашего баннера на 35000 сайтах. Реклама
-              покажется людям заинтересованным в Вашем товаре.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Медийная реклама Google</h6><img class="lazyload" data-src="assets/img/5.png" alt="">
+            <p class="p-text">Медийная реклама в Яндексе – это размещение Вашего баннера на 35000 сайтах.
+              Реклама покажется людям заинтересованным в Вашем товаре.</p>
           </div>
           <div class="item">
-            <h6 class="small-head">Ремаркетинг/Ретаргетинг</h6>
-            <img class="lazyload" data-src="assets/img/6.png" alt="">
-
-            <p class="p-text">Медийная реклама в Яндексе – это размещение Вашего баннера на 35000 сайтах. Реклама
-              покажется людям заинтересованным в Вашем товаре.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Ремаркетинг/Ретаргетинг</h6><img class="lazyload" data-src="assets/img/6.png" alt="">
+            <p class="p-text">Медийная реклама в Яндексе – это размещение Вашего баннера на 35000 сайтах.
+              Реклама покажется людям заинтересованным в Вашем товаре.</p>
           </div>
         </div>
-
       </div>
-      <div class="wrapper__social">
+      <div class="wrapper__social" data-aos="fade-in">
         <h1 class="head__text">Реклама в социальных сетях</h1>
         <div class="items">
           <div class="item">
-            <h6 class="small-head">Реклама в Facebook</h6>
-            <img class="lazyload" data-src="assets/img/7.png" alt="">
-            <p class="p-text">На данный момент реклама Facebook является одним из эффективнейших методов продвижения
-              сайтов. Это выгодно!</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Реклама в Facebook</h6><img class="lazyload" data-src="assets/img/7.png" alt="">
+            <p class="p-text">На данный момент реклама Facebook является одним из эффективнейших методов
+              продвижения сайтов. Это выгодно !</p>
           </div>
           <div class="item">
-            <h6 class="small-head">Реклама в Instagram</h6>
-            <img class="lazyload" data-src="assets/img/8.png" alt="">
-            <p class="p-text">Реклама в Instagram дает возможность показывать Ваши услуги и товары любой аудитории и
-              общаться с ней напрямую.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Реклама в Instagram</h6><img class="lazyload" data-src="assets/img/8.png" alt="">
+            <p class="p-text">Реклама в Instagram дает возможность показывать Ваши услуги и товары любой
+              аудитории и общаться с ней напрямую.</p>
           </div>
           <div class="item">
-            <h6 class="small-head">Реклама в YouTube</h6>
-            <img class="lazyload" data-src="assets/img/9.png" alt="">
-
-            <p class="p-text">Реклама в YouTube – это шанс показать себя в лучшем ракурсе и гарантия широчайшего охвата
-              аудитории.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Реклама в YouTube</h6><img class="lazyload" data-src="assets/img/9.png" alt="">
+            <p class="p-text">Реклама в YouTube – это шанс показать себя в лучшем ракурсе и гарантия широчайшего
+              охвата аудитории.</p>
           </div>
         </div>
-
       </div>
-      <div class="wrapper__site-dev">
+      <div class="wrapper__site-dev" data-aos="fade-in">
         <h1 class="head__text">Разработка сайтов</h1>
         <div class="items">
           <div class="item">
-            <h6 class="small-head">Создание корпоративных сайтов</h6>
-            <img class="lazyload" data-src="assets/img/10.png" alt="">
-            <p class="p-text">Корпоративный сайт – это лицо Вашего бизнеса которое формирует представление пользователей
-              о
-              Вас и демонстрирует имидж компании.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Создание корпоративных сайтов</h6><img class="lazyload" data-src="assets/img/10.png"
+              alt="">
+            <p class="p-text">Корпоративный сайт – это лицо Вашего бизнеса которое формирует представление
+              пользователей о Вас и демонстрирует имидж компании.</p>
+
           </div>
           <div class="item">
-            <h6 class="small-head">Разработка landing page</h6>
-            <img class="lazyload" data-src="assets/img/11.png" alt="">
-            <p class="p-text">Landing Page – катализатор увеличения Ваших продаж. Ваш клиент точно заинтересуется
-              предложением и совершит желаемое Вами действие.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Разработка landing page</h6><img class="lazyload" data-src="assets/img/11.png"
+              alt="">
+            <p class="p-text">Landing Page – катализатор увеличения Ваших продаж. Ваш клиент точно
+              заинтересуется предложением и совершит желаемое Вами действие.</p>
           </div>
           <div class="item">
-            <h6 class="small-head">Заказать интернет-магазин</h6>
-            <img class="lazyload" data-src="assets/img/12.png" alt="">
-            <p class="p-text">Создадим шустрый, удобный и стильный интернет-магазин для любого бизнеса с учетом
-              современных трендов.</p>
-            <a href="">Подробнее</a>
+            <h6 class="small-head">Заказать интернет-магазин</h6><img class="lazyload" data-src="assets/img/12.png"
+              alt="">
+            <p class="p-text">Создадим шустрый,
+              удобный и стильный интернет-магазин для любого бизнеса с учетом современных трендов.</p>
           </div>
         </div>
-
       </div>
-      <div class="wrapper__premium">
+      <div class="wrapper__premium" id="agency" data-aos="fade-in">
         <div class="items">
           <div class="item">
             <p class="premium">PREMIUM DIGITAL</p>
-            <p class="p-text">Наша компания – это история маленькой
-              мечты, ставшей реальностью. Команда специалистов-профессионалов своего дела, мы относимся к своей работе с
-              особой любовью и трепетом. Именно этот фактор, является
-              основной составляющей нашего успеха и стремительного роста.</p>
+            <p class="p-text">Наша компания – это история маленькой мечты,
+              ставшей реальностью. Команда специалистов-профессионалов своего дела,
+              мы относимся к своей работе с особой любовью и трепетом. Именно этот фактор,
+              является основной составляющей нашего успеха и стремительного роста.</p>
           </div>
-          <div class="item">
-            <img class="lazyload" data-src="assets/img/people.png" alt="">
-
-          </div>
+          <div class="item"><img class="lazyload" data-src="assets/img/people.png" alt=""></div>
         </div>
       </div>
-      <div class="wrapper__icons">
+      <div class="wrapper__icons" data-aos="fade-in">
         <div class="items-icons">
-          <div class="item">
-            <img class="lazyload" data-src="assets/img/icon1.png" alt="">
+          <div class="item"><img class="lazyload" data-src="assets/img/icon1.png" alt="">
             <p class="head-text">СТРАТЕГИЯ</p>
-            <p class="p">Системный и комплексный подход в
-              коммуникации с потребителем в
-              интерактивных медиа средах.</p>
+            <p class="p">Системный и комплексный подход в коммуникации с потребителем в интерактивных медиа
+              средах.</p>
           </div>
-          <div class="item">
-            <img class="lazyload" data-src="assets/img/icon2.png" alt="">
+          <div class="item"><img class="lazyload" data-src="assets/img/icon2.png" alt="">
             <p class="head-text">КРЕАТИВ</p>
-            <p class="p">Поиск новых и неожиданных
-              Коммуникационных решений
-              На стыке технологий и PR.</p>
-
+            <p class="p">Поиск новых и неожиданных Коммуникационных решений На стыке технологий и PR.</p>
           </div>
-          <div class="item">
-            <img class="lazyload" data-src="assets/img/icon3.png" alt="">
+          <div class="item"><img class="lazyload" data-src="assets/img/icon3.png" alt="">
             <p class="head-text">СТРАТЕГИЯ</p>
-            <p class="p">Поиск и вовлечение талантов для
-              осуществления идей так, чтобы
-              бренд всегда оставлялся доволен.
-            </p>
+            <p class="p">Поиск и вовлечение талантов для осуществления идей так,
+              чтобы бренд всегда оставлялся доволен. </p>
           </div>
-          <div class="item">
-            <img class="lazyload" data-src="assets/img/icon4.png" alt="">
+          <div class="item"><img class="lazyload" data-src="assets/img/icon4.png" alt="">
             <p class="head-text">СТРАТЕГИЯ</p>
-            <p class="p">Возвращение к истокам рекламы -
-              бренд как символ и средство
-              решения насущной проблемы
+            <p class="p">Возвращение к истокам рекламы - бренд как символ и средство решения насущной проблемы
               Человека</p>
           </div>
         </div>
       </div>
       <div class="wrapper__grid"></div>
-      <div class="wrapper__location">
-        <iframe src="https://yandex.com/map-widget/v1/-/CCRtR85y" width="100%" height="400" frameborder="1"
-          allowfullscreen="true"></iframe>
-      </div>
+      <div class="wrapper__location"><iframe src="https://yandex.com/map-widget/v1/-/CCRtR85y" width="100%" height="400"
+          frameborder="1" allowfullscreen="true"></iframe></div>
     </div>
     </div>
   </section>
-  <!---Section--->
-
-  <!---Footer--->
-  <footer></footer>
-  <!---Footer--->
+  <footer>
+    <div class="wrapper">
+      <div class="items">
+        <div class="item">
+          <img class="lazyload" data-src="assets/img/logo.png" alt="">
+        </div>
+        <div class="item">
+          <p>Г.Ташкент, Мирзо Улугбекский район, Улица Мустакиллик, 59А</p>
+        </div>
+        <div class="item" id="contacts">
+          <a href="http://telegram.org/@Premiumuz">Телеграм</a>
+          <br>
+          <a href="mailto:info@premium.uz">Электронная почта</a>
+          <br>
+          <p> <a href="tel:+99895199-55-44">+99895199-55-44</a>
+            <br>
+            Заказать звонок.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.6/dist/lazyload.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script src="assets/js/main.js"></script>
 </body>
 

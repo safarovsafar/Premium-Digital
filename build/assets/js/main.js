@@ -9,7 +9,9 @@ toggler.addEventListener('click', () => {
 const myLazyLoad = new LazyLoad({
  elements_selector: ".lazyload"
 });
-
+AOS.init({
+  duration: 2500,
+});
 // function smoothScroll(target, duration) {
 //  let target = document.querySelector(target);
 //  const targetPosition = target.getBoundingClientReact().top;
