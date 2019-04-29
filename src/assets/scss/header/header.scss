@@ -3,8 +3,7 @@ header {
  background-color: #24345A;
 
  @include xs-block() {
-  height: 120vh;
-
+  height: 130vh;
  }
 
  .header {
@@ -92,7 +91,6 @@ header {
     z-index: 998;
     color: #005c9c;
     background: rgba(#fafafa, .99);
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     width: 30%;
     height: 100%;
     padding: 100px;

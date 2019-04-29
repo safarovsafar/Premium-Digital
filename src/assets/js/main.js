@@ -1,21 +1,22 @@
-const toggler = document.querySelector('.menu__toggler');
-const menu    = document.querySelector('.menu');
+const toggler = document.querySelector(".menu__toggler");
+const menu = document.querySelector(".menu");
+const close = document.querySelector('.wrapper');
 
-toggler.addEventListener('click', () => {
-  toggler.classList.toggle('active');
-  menu.classList.toggle('active');
+toggler.addEventListener("click", () => {
+  toggler.classList.toggle("active");
+  menu.classList.toggle("active");
+  close.classList.toggle(toggler);
 });
 
 const myLazyLoad = new LazyLoad({
- elements_selector: ".lazyload"
+  elements_selector: ".lazyload"
 });
 AOS.init({
-  duration: 2500,
+  duration: 1500
 });
-// function smoothScroll(target, duration) {
-//  let target = document.querySelector(target);
-//  const targetPosition = target.getBoundingClientReact().top;
-//  const startPostiton =
-// }
 
-// smoothScroll('.section2', 1000)
+
+var scroller = new SmoothScroll({
+  target: document.querySelector("#scroll-container"), // element container to scroll
+  scrollEase: 0.05,
+});

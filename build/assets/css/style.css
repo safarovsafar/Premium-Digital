@@ -10,7 +10,7 @@ footer .wrapper {
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10rem;
+    padding-top: 3rem;
 }
 
 footer .wrapper .items {
@@ -25,6 +25,7 @@ footer .wrapper .items {
 
 footer .wrapper .items .item {
     width: calc(33.33333% - 30px);
+    margin: 1rem;
     text-align: center;
 }
 
@@ -34,12 +35,24 @@ footer .wrapper .items .item a {
     color: aliceblue;
 }
 
+footer .wrapper .items .item i {
+    margin: 1rem;
+}
+
 footer .wrapper .items .item a:hover {
     color: aquamarine;
 }
 
 footer .wrapper .items .item img {
     height: 40px;
+}
+
+footer .wrapper .items .item:nth-child(1) {
+    margin-top: 5rem;
+}
+
+footer .wrapper .items .item:nth-child(2) {
+    margin-top: 5rem;
 }
 
 header {
@@ -141,8 +154,6 @@ header .header__nav .menu {
     z-index: 998;
     color: #005c9c;
     background: rgba(250, 250, 250, 0.99);
-    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     width: 30%;
     height: 100%;
     padding: 100px;
@@ -237,6 +248,10 @@ section .wrapper .head__text {
 }
 
 section .wrapper .items {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -265,6 +280,13 @@ section .wrapper .items .item .p-text {
 
 section .wrapper .items .item img {
     height: 250px;
+}
+
+section .wrapper__premium {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 section .wrapper__premium .items {
@@ -452,11 +474,19 @@ section .wrapper__location {
 }
 
 @media screen and (max-width: 960px) {
+    footer {
+        height: 70vh;
+    }
+
     footer .wrapper .items {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    footer .wrapper .items .item {
+        width: calc(100% - 30px);
     }
 
     header .header__items-middle {
@@ -544,6 +574,16 @@ section .wrapper__location {
         padding-right: 15px;
     }
 
+    section .wrapper .items {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    section .wrapper__premium {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     section .wrapper__icons {
         padding-left: 15px;
         padding-right: 15px;
@@ -559,7 +599,11 @@ section .wrapper__location {
 }
 
 @media screen and (max-width: 560px) {
+    footer {
+        height: 74vh;
+    }
+
     header {
-        height: 120vh;
+        height: 130vh;
     }
 }

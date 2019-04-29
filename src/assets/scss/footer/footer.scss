@@ -2,9 +2,17 @@ footer {
  height: 40vh;
  background-color: #24345A;
 
+ @include md-block() {
+  height: 70vh;
+ }
+
+ @include xs-block() {
+  height: 74vh;
+ }
+
  .wrapper {
   @include wp();
-  padding-top: 10rem;
+  padding-top: 3rem;
 
   .items {
    display: flex;
@@ -17,12 +25,18 @@ footer {
 
    .item {
     @include size(8);
+    @include size-md(24);
+    margin: 1rem;
     text-align: center;
 
     p,
     a {
      font-size: 20px;
      color: aliceblue;
+    }
+
+    i {
+     margin: 1rem;
     }
 
 
@@ -34,6 +48,14 @@ footer {
     img {
      height: 40px;
     }
+   }
+
+   .item:nth-child(1) {
+    margin-top: 5rem;
+   }
+
+   .item:nth-child(2) {
+    margin-top: 5rem;
    }
   }
  }

@@ -13,6 +13,7 @@
     "browser-sync": "^2.26.5",
     "del": "^4.1.0",
     "granim": "^2.0.0",
+    "gsap": "^2.1.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-csso": "^3.0.1",
@@ -37,7 +38,8 @@
     "particles.js": "^2.0.0",
     "react": "^16.8.6",
     "react-particles-js": "^2.6.0",
-    "scrollreveal": "^4.0.5"
+    "scrollreveal": "^4.0.5",
+    "smooth-scroll": "^16.0.3"
   },
   "description": "",
   "devDependencies": {
