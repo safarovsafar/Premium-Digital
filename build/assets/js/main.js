@@ -11,8 +11,10 @@ toggler.addEventListener("click", () => {
 const myLazyLoad = new LazyLoad({
   elements_selector: ".lazyload"
 });
+
+
 AOS.init({
-  duration: 1500
+  duration: 2500
 });
 
 

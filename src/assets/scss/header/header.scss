@@ -1,4 +1,4 @@
-header {
+.main-header {
  height: 100vh;
  background-color: #24345A;
 
@@ -187,5 +187,238 @@ header {
    @include size-md(24);
    margin-left: -5rem;
   }
+ }
+}
+
+
+
+.second-header {
+ height: 15vh;
+ background-color: #24345A;
+
+ @include xs-block() {
+  height: 15vh;
+ }
+
+ .header {
+  &__navbar {
+   @include wp-full();
+   height: 10vh;
+   display: flex;
+   justify-content: space-between;
+
+   .logo {
+    // display: flex;
+    text-align: center;
+
+
+    img {
+     height: 35px;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+    }
+
+    p {
+     color: #fff;
+     font-size: 15px;
+    }
+   }
+  }
+
+  &__nav {
+   .menu__toggler {
+    position: relative;
+    top: 55px;
+    left: 20px;
+    z-index: 999;
+    height: 28px;
+    width: 28px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    span,
+    span::before,
+    span::after {
+     position: absolute;
+     content: '';
+     width: 28px;
+     height: 2.5px;
+     background: #ffffff;
+     border-radius: 20px;
+     transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    span::before {
+     top: -8px;
+
+    }
+
+    span::after {
+     top: 8px;
+    }
+
+    &.active>span {
+     background: transparent;
+    }
+
+    &.active>span::before,
+    &.active>span::after {
+     background: #005c9c;
+     top: 0px;
+    }
+
+    &.active>span::before {
+     transform: rotate(-225deg);
+    }
+
+    &.active>span::after {
+     transform: rotate(225deg);
+    }
+
+   }
+
+   .menu {
+    position: absolute;
+    left: -40%;
+    z-index: 998;
+    color: #005c9c;
+    background: rgba(#fafafa, .99);
+    width: 40%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+
+    @media only screen and (max-width: 600px) {
+     width: 250px;
+     left: -250px;
+     padding: 50px;
+    }
+
+    &.active {
+     left: 0;
+    }
+
+    p {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+    }
+   }
+
+   @import url('https://fonts.googleapis.com/css?family=K2D');
+
+   *,
+   *::before,
+   *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+  }
+ }
+
+ .wrapper {
+  height: 50vh;
+  margin-top: 2rem;
+  background-color: RGBA(35, 50, 88, .76);
+  color: #fff;
+
+
+  @include md-block() {
+   height: 78vh;
+  }
+
+  &-first-row {
+   text-transform: uppercase;
+
+   .items {
+    @include wp();
+    display: flex;
+
+    @include md-block() {
+     flex-direction: column;
+     text-align: center;
+    }
+
+    .item:nth-child(1) {
+     @include size(18);
+     @include size-md(24);
+     padding-top: 11rem;
+
+     .head {
+      font-size: 45px;
+      font-weight: bold;
+      letter-spacing: 1px;
+     }
+
+     .small {
+      font-size: 18px;
+      color: RGBA(225, 225, 225, .76)
+     }
+    }
+
+    .item:nth-child(2) {
+     padding-top: 6rem;
+
+     @include md-block() {
+      @include size(10);
+      margin: 0 auto;
+     }
+    }
+   }
+  }
+
+  &-second-row {
+   height: 36vh;
+   background-color: RGBA(36, 52, 29025, .11);
+   color: #24345A;
+   // margin-top: -1rem;
+   margin-top: 4.2rem;
+
+   @include md-block() {
+    height: 100vh;
+    margin-top: 3rem;
+   }
+
+   .items {
+    @include wp();
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+
+    @include md-block() {
+     flex-direction: column;
+    }
+
+    .item {
+     @include size(6);
+     @include size-md(16);
+
+     @include md-block() {
+      text-align: center;
+      margin: 0 auto;
+     }
+
+     text-align: center;
+
+     .main {
+      margin-top: 1rem;
+      font-size: 20px;
+      font-weight: bold;
+     }
+
+     .small {
+      font-size: 18px;
+     }
+    }
+   }
+  }
+
  }
 }
