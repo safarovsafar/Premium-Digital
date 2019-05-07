@@ -3,22 +3,26 @@ const menu = document.querySelector(".menu");
 const close = document.querySelector('.wrapper');
 
 toggler.addEventListener("click", () => {
-  toggler.classList.toggle("active");
-  menu.classList.toggle("active");
-  close.classList.toggle(toggler);
+    toggler.classList.toggle("active");
+    menu.classList.toggle("active");
+    close.classList.toggle(toggler);
 });
 
 const myLazyLoad = new LazyLoad({
-  elements_selector: ".lazyload"
+    elements_selector: ".lazyload"
 });
 
 
 AOS.init({
-  duration: 2500
+    duration: 2500
 });
 
 
-var scroller = new SmoothScroll({
-  target: document.querySelector("#scroll-container"), // element container to scroll
-  scrollEase: 0.05,
+let scroller = new SmoothScroll({
+    target: document.querySelector("#scroll-container"), // element container to scroll
+    scrollEase: 0.05,
 });
+
+// var glide = new Glide('.glide', { startAt: 0 }).mount()
+
+// glide.destroy()
