@@ -12,7 +12,6 @@
 
  .wrapper {
   @include wp();
-  padding-top: 3rem;
 
   .items {
    display: flex;
@@ -70,11 +69,11 @@
   color: #fff;
 
   @include md-block() {
-   height: 185vh;
+   height: 150vh;
   }
 
   @include xs-block() {
-   height: 200vh;
+   height: 320vh;
   }
 
   .items {

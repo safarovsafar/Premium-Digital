@@ -22,7 +22,4 @@ let scroller = new SmoothScroll({
     target: document.querySelector("#scroll-container"), // element container to scroll
     scrollEase: 0.05,
 });
-
-// var glide = new Glide('.glide', { startAt: 0 }).mount()
-
-// glide.destroy()
+const scroll = new SmoothScroll('a[href*="#"]');
