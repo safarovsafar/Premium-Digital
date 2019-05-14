@@ -27,6 +27,14 @@
     p {
      color: #fff;
      font-size: 15px;
+
+     a {
+      color: #fafafa;
+     }
+
+     :hover {
+      color: deepskyblue;
+     }
     }
    }
   }
@@ -87,11 +95,11 @@
 
    .menu {
     position: absolute;
-    left: -70%;
+    left: -30%;
     z-index: 998;
     color: #005c9c;
     background: rgba(#fafafa, .99);
-    width: 70%;
+    width: 30%;
     height: 100%;
     padding: 100px;
     display: flex;
@@ -193,7 +201,7 @@
 
 
 .second-header {
- height: 15vh;
+ height: 18vh;
  background-color: #24345A;
 
  @include xs-block() {
@@ -221,6 +229,14 @@
     p {
      color: #fff;
      font-size: 15px;
+
+     a {
+      color: #fafafa;
+     }
+
+     :hover {
+      color: deepskyblue;
+     }
     }
    }
   }

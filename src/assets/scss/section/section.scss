@@ -140,7 +140,7 @@
  .wrapper {
   &-ads {
    background-color: RGBA(35, 50, 80, .76);
-   padding: 2rem;
+   padding: 5rem;
 
    @include md-block() {
     padding: 3rem;
@@ -169,6 +169,7 @@
       font-weight: bold;
       letter-spacing: 0.2rem;
       color: #ffffff;
+      margin-top: 3rem;
 
       @include md-block() {
        font-size: 28px;
