@@ -12,6 +12,7 @@
     "animate.css": "^3.7.0",
     "aos": "^3.0.0-beta.6",
     "browser-sync": "^2.26.5",
+    "bulma": "^0.7.4",
     "del": "^4.1.0",
     "granim": "^2.0.0",
     "gsap": "^2.1.2",

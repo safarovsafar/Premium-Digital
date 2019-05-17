@@ -1,5 +1,5 @@
 .footer-first {
- height: 35vh;
+ height: 40vh;
  background-color: #24345A;
 
  @include md-block() {
@@ -26,7 +26,7 @@
     @include size(8);
     @include size-md(24);
     margin: 1rem;
-    text-align: center;
+    margin-right: 5rem;
 
     p,
     a {
@@ -80,6 +80,10 @@
    @include wp();
    display: flex;
    justify-content: space-between;
+
+   img {
+    height: 90px;
+   }
 
    @include md-block() {
     flex-direction: column;
